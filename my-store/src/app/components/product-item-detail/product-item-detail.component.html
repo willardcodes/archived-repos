@@ -1,0 +1,21 @@
+<div class="detail-container" fxLayout="row">
+  <div>
+    <img src="{{ product.url }}" alt="{{ product.name }}">
+  </div>
+  <div class="detail-item" fxLayout="column" fxLayoutGap="10">
+    <div class="product-name">{{ product.name }}</div>
+    <div>{{ product.price }}</div>
+    <div>{{ product.description }}</div>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <select class="select-input" name="quantity" [(ngModel)]="selectedQuantity">
+          <option *ngFor="let quantity of quantities" [ngValue]="quantity">{{ quantity }}</option>
+        </select>
+      </div>
+      <div>
+        <input class="btn btn-primary submit-button" type="submit" value="Add to cart">
+      </div>
+    </form>
+    <a class="back-link" routerLink="/">Return to product list</a>
+  </div>
+</div>

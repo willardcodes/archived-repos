@@ -1,0 +1,17 @@
+<div class="confirmation-container" fxLayout="column">
+  <div class="confirmation-header">Success!</div>
+  <div class="confirmation-items" fxLayout="column" fxLayoutGap="10">
+    <div class="confirmation-item">
+      Thank you, <span class="bold-text">{{ name }}</span>!
+    </div>
+    <div class="confirmation-item">
+      Your <span class="bold-text">${{ total.toFixed(2) }}</span> order is confirmed!
+    </div>
+    <div class="confirmation-item">
+      Please allow 1 - 3 business day[s] for shipping.
+    </div>
+    <div class="return-button">
+      <button class="btn btn-primary" (click)="returnToProductList()">Return to product list</button>
+    </div>
+  </div>
+</div>

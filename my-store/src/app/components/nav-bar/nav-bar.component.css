@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  background: #33B5E5;
+  color: #fff;
+  padding: 12px;
+}
+
+.store-name {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+a {
+  color: #ffffff;
+}
